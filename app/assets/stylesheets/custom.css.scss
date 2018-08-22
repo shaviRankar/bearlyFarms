@@ -1,0 +1,154 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+$darkBlue: #2380a8;
+$linkHover: #00628c;
+$backgroundColor: white;
+
+//nav and logo
+#logo{
+    position: fixed;
+    width: 100%;
+
+    #logoContainer {
+      width: 275px;
+      height: 275px;
+      padding: 0;
+        #circle {
+          height: 100%;
+          width: 100%;
+          background-color: $darkBlue;
+          border-radius: 50%;
+        }
+        img {
+          width: 265px;
+          height: 265px;
+          margin-left: 5px;
+          margin-top: 10px;
+        }
+    }
+}
+
+#navbar {
+   background-color: $darkBlue;
+   height: 50px;
+   border-bottom-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+   margin: auto;
+   margin-top: 280px;
+   position: sticky;
+   top: 0 !important;
+   z-index: 1;
+
+   ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     text-align: center;
+   }
+
+   li {
+     display: inline-block;
+   }
+
+   li a {
+     margin-left: 0;
+     display: block;
+     color: white;
+     text-align: center;
+     text-transform: uppercase;
+     text-decoration: none;
+     padding: 16px;
+     transition: color 0.5s ease;
+   }
+
+   li a:hover {
+     color: $linkHover;
+   }
+
+   li a:active {
+     color: navy;
+   }
+}//end of header
+
+#content{
+  position: relative;
+  background-color: $backgroundColor;
+  //bearly mission statement
+  #bearlyMission {
+    p {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin: 15px auto;
+      padding: 10px 50px;
+      border-top: 1px solid #eaeaea;
+      border-bottom: 1px solid #eaeaea;
+    }
+  }
+
+  //parallax
+  #plx {
+    background-image: asset_url("mt_hood.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    p {
+      border-top: none;
+      border-bottom: none;
+    }
+  }
+
+  .banner1 {
+    padding: 50px 20px;
+  }
+
+  blockquote {
+    color: #eaeaea;
+    border-left: none;
+    font-size: 2.5em ;
+    font-weight: bold;
+    footer {
+      font-size: 1em;
+      color: white;
+    }
+  }
+
+  //Produce UL
+  #vegList {
+    .jumbotron{
+      margin-top: 10px;
+      padding: 5px 0px;
+    }
+
+    .well {
+      padding: 0;
+    }
+    //ul
+     ul {
+      padding: 0;
+      list-style: none;
+      font-size: 1.5em;
+      font-weight: bold;
+      b {
+        font-size: 70%;
+      }
+    }
+  }
+}
+//footer
+#footer {
+  height: 150px;
+  margin-top: 10px;
+  padding-top: 5px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border-top: 1px solid #eaeaea;
+  background-color: $darkBlue;
+
+  a:hover {
+    color: $linkHover;
+  }
+}

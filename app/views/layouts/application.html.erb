@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BearlyFarms</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+      <!--render logo and navbar-->
+      <%= render 'layouts/logo' %>
+      <%= render '/layouts/nav' %>
+
+      <!--page content-->
+      <%= yield %>
+
+      <!--render footer-->
+      <%= render '/layouts/footer' %>
+    </div>
+  </body>
+
+
+</html>
