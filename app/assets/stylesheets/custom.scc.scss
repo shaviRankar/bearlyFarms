@@ -1,0 +1,278 @@
+@import "bootstrap";
+
+$darkGreen: #006600;
+$linkHover: #017D12;
+$darkerGreen: #003a00;
+$backgroundColor: white;
+
+a {
+  color: white;
+  display: block;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+#header {
+  position: sticky;
+  top: 10px;
+  z-index: auto;
+  
+  #logo {
+    width: 100%;
+  
+    #logoContainer {
+      height: 275px;
+      margin: 0 auto;
+      width: 275px;
+    
+      #circle {
+        background-color: $darkGreen;
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+      } //End circle
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    } //End logo container
+  } //End logo
+} //End header
+
+#navigation {
+  background-color: $backgroundColor;
+  margin-top: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+    
+  nav {
+    background-color: $darkGreen; 
+    width: 100%;
+  
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      }
+  
+    li {
+      display: inline-block;
+    }
+  }
+  
+  .nav-item {
+    border-radius: 25px;
+    display: inline-block;
+    transition: background-color 0.2s ease;
+  }
+
+  .nav-item:hover {
+    background-color: $darkerGreen;
+  }
+  
+  .nav-link:hover {
+    color: $linkHover;
+  }
+  
+  .nav-link:active {
+    color: $linkHover;
+  } //end horizontal navbar
+  
+  //nested dropdown-menu
+  .dropdown-menu {
+    background-color: $darkGreen;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+  
+  .dropdown-item {
+    background-color: $darkGreen;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dropdown-item {
+    border-radius: 25px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: $darkerGreen;
+  }
+  
+  .dropdown-link {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 5px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.2s ease;  
+  }
+  
+  .dropdown-link:hover {
+    color: $linkHover;
+    text-decoration: none;
+  }
+
+}
+
+#content {
+  background-color: $backgroundColor;
+  border-top: 20px solid $backgroundColor;
+  margin-top: -20px;
+  position: relative;
+  .jumbotron {
+    height: 1000px;
+  }
+}
+
+/*
+@import "bootstrap";
+
+$darkGreen: #006600;
+$linkHover: #017D12;
+$darkerGreen: #003a00;
+$backgroundColor: white;
+
+a {
+  color: lightGray;
+  display: block;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+//header with logo
+#logo {
+  background-color: darkGray;
+  position: fixed;
+  width: 100%;
+
+  #logoContainer {
+    height: 275px;
+    width: 275px;
+    padding: 0;
+  
+    #circle {
+      background-color: $darkGreen;
+      border-radius: 50%;
+      height: 100%;
+      width: 100%;
+    }
+    img {
+      height: 275px;
+      margin-left: -15px;
+      margin-top: -12px;
+      width: 275px;
+    }
+  }
+}
+
+//horizontal nav
+#navigation {
+    z-index: 1;
+}
+
+nav {
+  background-color: $darkGreen; 
+  margin-top: 225px;
+  width: 100%;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0 !important;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.nav-item {
+  border-radius: 25px;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.nav-item:hover {
+  background-color: $darkerGreen;
+}
+
+.nav-link:hover {
+  color: $linkHover;
+}
+
+.nav-link:active {
+  color: $linkHover;
+}
+//end horizontal navbar
+
+//nested dropdown-menu
+.dropdown-menu {
+  background-color: $darkGreen;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.dropdown-item {
+  background-color: $darkGreen;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-item {
+  border-radius: 25px;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: $darkerGreen;
+}
+
+.dropdown-link {
+  color: lightGray;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 5px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s ease;  
+}
+
+.dropdown-link:hover {
+  color: $linkHover;
+  text-decoration: none;
+}
+//end dropdown-menu
+
+//content box
+#content {
+  position: relative;
+  z-index: 0;
+  
+  .jumbotron {
+    height: 1000px;
+    position: relative;
+    //z-index: -1;
+  }
+}
+*/
+
